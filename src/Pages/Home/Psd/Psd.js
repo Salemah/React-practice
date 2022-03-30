@@ -9,6 +9,9 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import doctor from '../../../images/doctor.png'
 import bg from '../../../images/appointment-bg.png'
+import { Divider, InputBase, Paper, TextField } from '@mui/material';
+import SearchIcon from '@mui/icons-material/Search';
+import DirectionsIcon from '@mui/icons-material/Directions';
 
 
 const appointmentBanner = {
@@ -37,28 +40,39 @@ const Psd = () => {
                 </Toolbar>
             </AppBar>
             <Grid container spacing={2}>
-                {/* <Grid item xs={12} md={6}>
-                    <img
-                        style={{ width: 400, marginTop: '-110px' }}
-                        src={} alt="" />doctor
-                </Grid> */}
+
                 <Grid item xs={12} md={12} sx={{
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    textAlign: 'center'
+                    textAlign: 'center',
+                    marginTop:'90px',
+                    marginBottom:'130px'
                 }}>
                     <Box>
-                        <Typography variant="h6" sx={{ mb: 5 }} style={{ color: '#5CE7ED' }}>
-                            Appointment
+
+                        <Typography variant="h4" style={{ color: 'white', marginBottom: '16px' }}>
+                            Where Will You Go Next?
                         </Typography>
-                        <Typography variant="h4" style={{ color: 'white' }}>
-                            Where Will You Go Next
-                        </Typography>
-                        <Typography variant="h6" sx={{ my: 5 }} style={{ color: 'white', fontSize: 14, fontWeight: 300 }}>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere totam aliquam praesentium vel. Amet veniam odio vero doloremque laborum.
-                        </Typography>
-                        <Button variant="contained" style={{ backgroundColor: '#5CE7ED' }}>Learn More</Button>
+
+                        <Paper style={{ display: 'flex', alignItems: 'center', width: 300,marginLeft:'35px' }}>
+                            <InputBase
+                                sx={{ ml: 1, flex: 1 }}
+                                placeholder="Search" />
+
+                            <Button type="submit" sx={{ backgroundColor: '#ED6442', p: '5px', borderRadius: '1px 3px 3px 1px',color:'black' }}>Go</Button>
+
+
+
+
+
+                        </Paper>
+
+
+
+
+
+
                     </Box>
                 </Grid>
             </Grid>
