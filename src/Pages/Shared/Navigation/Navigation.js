@@ -26,6 +26,7 @@ const Navigation = () => {
                         Doctors Portal
                     </Typography>
                     <Link style={{ textDecoration: 'none', color: 'white' }}  to="/appointment"><Button sx={{bgcolor: 'error.main'}} color="inherit">Appointment</Button></Link>
+                    <Link style={{ textDecoration: 'none', color: 'white' }}  to="/psd"><Button sx={{bgcolor: 'error.main'}} color="inherit">Psd</Button></Link>
                     <Button color="inherit">Login</Button>
                 </Toolbar>
             </AppBar>
