@@ -227,6 +227,46 @@ const Psd = () => {
                     </Grid>
                 </Container>
             </Box>
+            <Box sx={{ flexGrow: 1 }}>
+                
+                <Grid container spacing={2}>
+
+                    <Grid item xs={12} md={12} sx={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        textAlign: 'center',
+                        marginTop: '90px',
+                        marginBottom: '130px'
+                    }}>
+                        <Box>
+
+                            <Typography variant="h4" style={{ color: 'black', marginBottom: '14px' }}>
+                               Get Hottest Offer To Your Inbox
+                            </Typography>
+
+                            <Paper style={{ display: 'flex', alignItems: 'center', width: 300, marginLeft: '55px',backgroundColor:'#EAD3D2 ' }}>
+                                <InputBase
+                                    sx={{ ml: 1, flex: 1 }}
+                                    placeholder="Search" />
+
+                                <Button type="submit" sx={{ backgroundColor: '#5B89FC ', p: '5px', borderRadius: '1px 3px 3px 1px', color: 'black' }}>Subscribe</Button>
+
+
+
+
+
+                            </Paper>
+
+
+
+
+
+
+                        </Box>
+                    </Grid>
+                </Grid>
+            </Box>
         </>
 
     );
